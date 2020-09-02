@@ -26,5 +26,8 @@ describe('Suit de Teste de Calculos', () => {
         expect(moduloCalculo.dividir(0, 2)).toBe("Divisão por Zero");
     });
 
+    it('Quando eu executo a função calcular média passando os valores 10, 8 e 9, o resultado deve ser o valor 9 ', () => {
+        expect(moduloCalculo.calularMedia(10, 8, 9)).toBe(9);
+    });
 
 })
