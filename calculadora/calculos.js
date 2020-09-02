@@ -17,8 +17,11 @@ function dividir(numero1, numero2){
 }
 
 function calularMedia(valor1, valor2, valor3){
-    //return ( valor1 + valor2 + valor3 ) / 3;
     return dividir((valor1 + valor2 + valor3), 3);
+}
+
+function calcularResto(valor1, valor2){
+    return valor1 % valor2;
 }
 
 module.exports ={
@@ -26,5 +29,6 @@ module.exports ={
     subtrair,
     multiplicar,
     dividir,
-    calularMedia
+    calularMedia,
+    calcularResto
 }

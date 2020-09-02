@@ -30,4 +30,7 @@ describe('Suit de Teste de Calculos', () => {
         expect(moduloCalculo.calularMedia(10, 8, 9)).toBe(9);
     });
 
+    it('Quando eu executo a função calcular resto passando os valores 5 e 2, o resultado deve ser o valor 1 ', () => {
+        expect(moduloCalculo.calcularResto(5, 2)).toBe(1);
+    });
 })
