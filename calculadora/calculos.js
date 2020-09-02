@@ -17,7 +17,8 @@ function dividir(numero1, numero2){
 }
 
 function calularMedia(valor1, valor2, valor3){
-    return ( valor1 + valor2 + valor3 ) / 3;
+    //return ( valor1 + valor2 + valor3 ) / 3;
+    return dividir((valor1 + valor2 + valor3), 3);
 }
 
 module.exports ={
