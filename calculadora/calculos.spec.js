@@ -10,6 +10,10 @@ describe('Suit de Teste de Calculos', () => {
        expect(moduloCalculo.subtrair(3, 2)).toBe(1);
     });
 
+    it('Quando eu executo a função subtrair passando os valores 5 e 7, o resultado deve ser o valor de -2 ', () => {
+        expect(moduloCalculo.subtrair(5, 7)).toBe(-2);
+     });
+
     it('Quando eu executo a função multiplicar passando os valores 2 e 3, o resultado deve ser o valor de 6 ', () => {
        expect(moduloCalculo.multiplicar(2, 3)).toBe(6);
     });
