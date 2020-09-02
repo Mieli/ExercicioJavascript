@@ -22,15 +22,28 @@ describe('Suit de Teste de Calculos', () => {
         expect(moduloCalculo.dividir(6, 2)).toBe(3);
     });
 
-    it('Quando eu executo a função dividir passando os valores 0 e 2, o resultado deve ser uma mesagem de "Divisão por Zero" ', () => {
-        expect(moduloCalculo.dividir(0, 2)).toBe("Divisão por Zero");
+    it('Quando eu executo a função dividir passando os valores 10 e 0, o resultado deve ser uma mesagem de "Divisão por Zero" ', () => {
+        expect(moduloCalculo.dividir(10, 0)).toBe("Divisão por Zero");
     });
 
     it('Quando eu executo a função calcular média passando os valores 10, 8 e 9, o resultado deve ser o valor 9 ', () => {
         expect(moduloCalculo.calularMedia(10, 8, 9)).toBe(9);
     });
 
-    it('Quando eu executo a função calcular resto passando os valores 5 e 2, o resultado deve ser o valor 1 ', () => {
+    it('Quando eu executo a função calcularResto passando os valores 5 e 2, o resultado deve ser o valor 1 ', () => {
         expect(moduloCalculo.calcularResto(5, 2)).toBe(1);
     });
+
+    it('Quando eu executo a função calcularPotencia passando os valores 5 e 2, o resultado deve ser o valor 25 ', () => {
+        expect(moduloCalculo.calcularPotencia(5, 2)).toBe(25);
+    });
+
+    it('Quando eu executo a função calcularPotencia passando os valores 5 e 3, o resultado deve ser o valor 125 ', () => {
+        expect(moduloCalculo.calcularPotencia(5, 3)).toBe(125);
+    });
+
+    it('Quando eu executo a função calcularPerimetroRetangulo passando os valores 4, 2, o resultado deve ser o valor 12 ', () => {
+        expect(moduloCalculo.calcularPerimetroRetangulo(4, 2)).toBe(12);
+    });
+
 })
